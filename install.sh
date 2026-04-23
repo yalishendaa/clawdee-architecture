@@ -372,8 +372,8 @@ if [[ "$SETUP_GATEWAY_LOWER" != "n" ]]; then
     if [ ! -f "${GATEWAY_DIR}/gateway.py" ]; then
         log "Downloading gateway from clawdee-telegram-gateway..."
         GATEWAY_REPO="/tmp/clawdee-gateway-install-$$"
-        gh repo clone YOUR_GITHUB/clawdee-telegram-gateway "${GATEWAY_REPO}" 2>/dev/null || \
-        git clone "https://github.com/YOUR_GITHUB/clawdee-telegram-gateway.git" "${GATEWAY_REPO}" 2>/dev/null
+        gh repo clone yalishendaa/clawdee-telegram-gateway "${GATEWAY_REPO}" 2>/dev/null || \
+        git clone "https://github.com/yalishendaa/clawdee-telegram-gateway.git" "${GATEWAY_REPO}" 2>/dev/null
 
         if [ -f "${GATEWAY_REPO}/gateway.py" ]; then
             cp "${GATEWAY_REPO}/gateway.py" "${GATEWAY_DIR}/gateway.py"
@@ -383,7 +383,7 @@ if [[ "$SETUP_GATEWAY_LOWER" != "n" ]]; then
             log "Configure: cp ${GATEWAY_DIR}/config.example.json ${GATEWAY_DIR}/config.json"
             log "Features: reactions, inline buttons, webhook API, topic routing, streaming modes"
         else
-            warn "Could not download gateway. Install manually from: github.com/YOUR_GITHUB/clawdee-telegram-gateway"
+            warn "Could not download gateway. Install manually from: github.com/yalishendaa/clawdee-telegram-gateway"
         fi
         rm -rf "${GATEWAY_REPO}"
     else

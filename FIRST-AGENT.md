@@ -191,7 +191,7 @@ Full-featured: voice messages, progress display, memory:
 
 ```bash
 # Clone gateway
-git clone https://github.com/YOUR_GITHUB/clawdee-telegram-gateway.git
+git clone https://github.com/yalishendaa/clawdee-telegram-gateway.git
 cd clawdee-telegram-gateway
 
 # Configure
@@ -202,7 +202,7 @@ cp config.example.json config.json
 python3 gateway.py
 ```
 
-See [clawdee-telegram-gateway](https://github.com/YOUR_GITHUB/clawdee-telegram-gateway) for details.
+See [clawdee-telegram-gateway](https://github.com/yalishendaa/clawdee-telegram-gateway) for details.
 
 ## Step 8: Test It
 

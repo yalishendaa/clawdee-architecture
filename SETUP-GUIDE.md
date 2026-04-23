@@ -79,7 +79,7 @@ gh auth login
 Это главный шаг. Скрипт спросит имя агента, роль, модель, твоё имя -- и создаст всё автоматически.
 
 ```bash
-git clone https://github.com/YOUR_GITHUB/clawdee-architecture.git
+git clone https://github.com/yalishendaa/clawdee-architecture.git
 cd public-architecture-claude-code
 bash install.sh
 ```
@@ -142,7 +142,7 @@ bash install.sh
 ## Шаг 6: Проверь тестами
 
 ```bash
-git clone https://github.com/YOUR_GITHUB/architecture-brain-tests.git /tmp/architecture-brain-tests
+git clone https://github.com/yalishendaa/architecture-brain-tests.git /tmp/architecture-brain-tests
 cd /tmp/architecture-brain-tests
 pip install pytest
 python3 -m pytest tests/ -v
@@ -241,7 +241,7 @@ https://github.com/RichardAtCT/claude-code-telegram
 
 ```
 Разверни Telegram Gateway:
-https://github.com/YOUR_GITHUB/clawdee-telegram-gateway
+https://github.com/yalishendaa/clawdee-telegram-gateway
 
 1. git clone репозиторий
 2. cp config.example.json config.json
