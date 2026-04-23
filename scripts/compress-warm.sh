@@ -7,10 +7,11 @@ set -euo pipefail
 # Fallback: skip if Sonnet unavailable (WARM stays as-is until next run)
 # IMPORTANT: runs claude from /tmp to avoid loading project CLAUDE.md context
 
-WS="/home/openclaw/.claude-lab/thrall/.claude"
+WS="${AGENT_WS:-$HOME/.claude-lab/clawdee/.claude}"
 WARM="$WS/core/warm/decisions.md"
 LOCKFILE="/tmp/compress-warm.lock"
-LOGDIR="/home/openclaw/.claude-lab/thrall/logs"
+LOGDIR="${AGENT_WS:+$(dirname "$WS")}/logs"
+LOGDIR="${LOGDIR:-$HOME/.claude-lab/clawdee/logs}"
 LOG="$LOGDIR/compress-warm.log"
 MIN_SIZE=4096
 MIN_LINES=30

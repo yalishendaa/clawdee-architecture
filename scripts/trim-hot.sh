@@ -11,12 +11,13 @@ set -euo pipefail
 # Fallback: if Sonnet unavailable, use bash extraction (first 120 chars)
 # IMPORTANT: runs claude from /tmp to avoid loading project CLAUDE.md context
 
-WS="/home/openclaw/.claude-lab/thrall/.claude"
+WS="${AGENT_WS:-$HOME/.claude-lab/clawdee/.claude}"
 HOT="$WS/core/hot/recent.md"
 WARM="$WS/core/warm/decisions.md"
 ARCHIVE_DIR="$WS/core/hot/archive"
 LOCKFILE="/tmp/trim-hot.lock"
-LOGDIR="/home/openclaw/.claude-lab/thrall/logs"
+LOGDIR="${AGENT_WS:+$(dirname "$WS")}/logs"
+LOGDIR="${LOGDIR:-$HOME/.claude-lab/clawdee/logs}"
 LOG="$LOGDIR/trim-hot.log"
 MAX_AGE_HOURS=24
 MAX_ENTRIES=40
