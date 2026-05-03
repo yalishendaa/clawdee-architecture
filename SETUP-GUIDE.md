@@ -222,22 +222,7 @@ cd ~/.claude-lab/homer/.claude
 
 ## Шаг 10: Подключи Telegram (опционально)
 
-### Вариант A: Интерактивный (быстрый старт)
-
-```
-Установи Telegram-плагин для Claude Code:
-https://github.com/RichardAtCT/claude-code-telegram
-
-1. Создай бота через @BotFather в Telegram
-2. Установи: uv tool install claude-code-telegram
-3. Настрой переменные:
-   export CLAUDE_CODE_TELEGRAM_BOT_TOKEN="токен-от-BotFather"
-   export CLAUDE_CODE_TELEGRAM_ALLOWED_USERS="твой-user-id"
-   export CLAUDE_CODE_TELEGRAM_WORKDIR="$HOME/.claude-lab/homer/.claude"
-4. Запусти: claude-code-telegram
-```
-
-### Вариант B: Автономный (gateway, голосовые, память)
+### Автономный режим: gateway, голосовые, память
 
 ```
 Разверни Telegram Gateway:

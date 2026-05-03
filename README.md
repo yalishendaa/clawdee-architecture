@@ -380,12 +380,11 @@ Each agent writes to its own namespace but searches across all. Cross-agent sear
 
 Test categories: T20 (security), T26 (models), T27 (COMPACT_WINDOW), T28 (Learnings v2), and 25+ more.
 
-## Two Ways to Connect Telegram
+## Telegram Gateway
 
 | Method | Use Case | Repo |
 |--------|----------|------|
-| **claude-code-telegram** (plugin) | Interactive coding via Telegram | [RichardAtCT/claude-code-telegram](https://github.com/RichardAtCT/claude-code-telegram) |
-| **Telegram Gateway** (standalone) | Autonomous multi-agent: voice, progress, memory, 3+ bots | [yalishendaa/clawdee-telegram-gateway](https://github.com/yalishendaa/clawdee-telegram-gateway) |
+| **Telegram Gateway** (standalone) | Autonomous agent: voice, progress, memory | [yalishendaa/clawdee-telegram-gateway](https://github.com/yalishendaa/clawdee-telegram-gateway) |
 
 ## Documentation
 
